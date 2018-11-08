@@ -13,8 +13,10 @@ function drawSongs(results) {
     let song = results[i];
     template += `
 
-      <div class="col-6">
-      <div row="">
+      <div class="col-12">
+      <div class="row-justify-content-center">
+      
+      <div class="col-4">
       <img src= "${song.albumArt}"
           <p class= "${song.title}></p>
           <p class= "${song.artist}></p>

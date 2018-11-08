@@ -9,9 +9,10 @@ class ItunesService {
     return $.getJSON(url)
       .then(res => res.results.map(s => new Song(s)))
       .catch(err => console.log(err))
-  }
-}
 
+  }
+
+}
 
 
 export default ItunesService
