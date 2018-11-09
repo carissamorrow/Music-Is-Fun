@@ -17,9 +17,9 @@ function drawSongs(results) {
       <div class="row-justify-content-center">
       <img src= "${song.albumArt}">
           <p> "${song.title}></p>
-          <p class= "${song.artist}></p>
-          <p class= "${song.collection}></p>
-          <p class= "${song.price}></p>
+          <p> "${song.artist}></p>
+          <p> "${song.collection}></p>
+          <p> "${song.price}></p>
           </div>
           </div>
       <div class="col-4">
