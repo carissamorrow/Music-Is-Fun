@@ -6,7 +6,7 @@
   word-spacing: 40px;
   border: 5px solid rgb(114, 46, 114);
   border-radius: 10px;
-  margin-bottom: 30px
+  margin-bottom: 20px
 }
 body {
 background-image: url("https://us.123rf.com/450wm/eyematrix/eyematrix1211/eyematrix121100025/16550536-faded-old-music-background-piano-keys-and-notes-.jpg?ver=6");
@@ -24,4 +24,7 @@ font-size: 20px
   height: 200px;
   align-content: space-between;
   margin-top: 20px
+}
+.fasmusic {
+margin-left: 100px;
 }
