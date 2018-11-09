@@ -12,28 +12,19 @@ function drawSongs(results) {
   for (let i = 0; i < results.length; i++) {
     let song = results[i];
     template += `
-
-      <div class="col-12">
-      <div class="row-justify-content-center">
-      <img src= "${song.albumArt}">
-          <p> "${song.title}></p>
-          <p> "${song.artist}></p>
-          <p> "${song.collection}></p>
-          <p> "${song.price}></p>
-          </div>
-          </div>
       <div class="col-4">
-      <div class="row-justify-content-center">
-          <audio controls>
-              <source  src="${song.preview}" type="">
-          </audio>
-      </div>
+        <img src= "${song.albumArt}"></img>
+        <p> "${song.title}></p>
+        <p> "${song.artist}></p>
+        <p> "${song.collection}></p>
+        <p> "${song.price}></p>
+        <audio controls>
+          <source  src="${song.preview}" type="">
+        </audio>
       </div>
       `
-
     document.getElementById('songs').innerHTML = template
   }
-
 }
 
 
@@ -44,10 +35,12 @@ class ItunesController {
     e.preventDefault();
     var artist = e.target.artist.value;
     //changes the button to loading while songs load
+    // @ts-ignore
     $('#get-music-button').text('LOADING....');
     itunesService.getMusicByArtist(artist).then(results => {
       drawSongs(results)
       //changes button back to GET MUSIC once songs are loaded
+      // @ts-ignore
       $('#get-music-button').text('GET MUSIC');
     })
   }
