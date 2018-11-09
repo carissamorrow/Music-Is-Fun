@@ -41,7 +41,7 @@ class ItunesController {
       drawSongs(results)
       //changes button back to GET MUSIC once songs are loaded
       // @ts-ignore
-      $('#get-music-button').text('GET MUSIC');
+      $('#get-music-button').text('PLAY THIS ARTIST!');
     })
   }
 
