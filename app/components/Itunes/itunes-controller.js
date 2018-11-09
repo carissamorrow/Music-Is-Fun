@@ -15,21 +15,23 @@ function drawSongs(results) {
 
       <div class="col-12">
       <div class="row-justify-content-center">
-      
-      <div class="col-4">
-      <img src= "${song.albumArt}"
+      <img src= "${song.albumArt}">
           <p> "${song.title}></p>
           <p class= "${song.artist}></p>
           <p class= "${song.collection}></p>
           <p class= "${song.price}></p>
-          <audio controls class="mt-5">
-          <source src="${song.preview} type="audio/ogg">
+          </div>
+          </div>
+      <div class="col-4">
+      <div class="row-justify-content-center">
+          <audio controls>
+              <source  src="${song.preview}" type="">
           </audio>
-        </div>
+      </div>
       </div>
       `
 
-    document.getElementById('song-list').innerHTML = template
+    document.getElementById('songs').innerHTML = template
   }
 
 }
