@@ -10,6 +10,7 @@ class ItunesService {
       .then(res => res.results.map(s => new Song(s)))
       .catch(err => console.log(err))
 
+
   }
 
 }

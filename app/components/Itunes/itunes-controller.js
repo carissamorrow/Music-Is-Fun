@@ -18,11 +18,13 @@ function drawSongs(results) {
       
       <div class="col-4">
       <img src= "${song.albumArt}"
-          <p class= "${song.title}></p>
+          <p> "${song.title}></p>
           <p class= "${song.artist}></p>
           <p class= "${song.collection}></p>
           <p class= "${song.price}></p>
-          <p class= "${song.preview}></p> 
+          <audio controls class="mt-5">
+          <source src="${song.preview} type="audio/ogg">
+          </audio>
         </div>
       </div>
       `
