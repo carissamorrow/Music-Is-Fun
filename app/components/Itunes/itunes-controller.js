@@ -14,10 +14,10 @@ function drawSongs(results) {
     template += `
       <div class="col-4">
         <img src= "${song.albumArt}"></img>
-        <p> "${song.title}></p>
-        <p> "${song.artist}></p>
-        <p> "${song.collection}></p>
-        <p> "${song.price}></p>
+        <p>${song.title}</p>
+        <p>${song.artist}</p>
+        <p>${song.collection}</p>
+        <p>${song.price}</p>
         <audio controls>
           <source  src="${song.preview}" type="">
         </audio>
